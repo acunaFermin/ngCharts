@@ -18,7 +18,7 @@ export class BarraDobleComponent {
 
   productoData: ChartDataSets[] = [
     {
-      data: [200, 300, 400, 200, 100],
+      data: [200, 300, 400, 200, 150],
       label: 'Autos',
       backgroundColor: 'blue',
     },

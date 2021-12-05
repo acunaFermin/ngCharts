@@ -1,14 +1,16 @@
 <div class="row">
   <div class="col-md-6">
     <app-barra
-      [chartType]="horizontalBar"
+      [title]="'Employees'"
+      [chartType]="verticalBar"
       [proveedoresLabel]="proveedoresLabel"
       [grafData]="proveedoresData"
     ></app-barra>
   </div>
   <div class="col-md-6">
     <app-barra
-      [chartType]="verticalBar"
+      [title]="'Total Sales'"
+      [chartType]="horizontalBar"
       [proveedoresLabel]="proveedoresLabel"
       [grafData]="productoData"
     ></app-barra>

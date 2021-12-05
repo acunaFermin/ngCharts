@@ -10,6 +10,7 @@ import { Label } from 'ng2-charts';
 })
 export class BarraComponent implements OnInit {
   /****con el input reciclo el componente en barra-doble.component */
+  @Input() title: string = 'Investment Ratio';
   @Input() chartType: ChartType = 'bar';
   @Input() grafData: ChartDataSets[] = [
     { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
