@@ -1,1 +1,23 @@
-<h1>dona http</h1>
+<h1>Http Request</h1>
+<hr />
+
+<div
+  *ngIf="doughnutChartData.length === 0; else divGraf"
+  class="alert alert-info"
+>
+  Cargando data...
+</div>
+
+<div class="row">
+  <ng-template #divGraf>
+    <div style="display: block">
+      <canvas
+        baseChart
+        [data]="doughnutChartData"
+        [labels]="doughnutChartLabels"
+        [chartType]="doughnutChartType"
+      >
+      </canvas>
+    </div>
+  </ng-template>
+</div>
